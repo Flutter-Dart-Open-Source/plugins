@@ -1,3 +1,15 @@
+## 2.0.0-nullsafety.1
+
+* Fix crash when list string's type is dynamic.
+
+## 2.0.0-nullsafety
+
+* Migrate to null-safety.
+
+**Breaking changes**:
+
+* Setters no longer accept null to mean removing values. If you were previously using `set*(key, null)` for removing, use `remove(key)` instead.
+
 ## 0.5.13+3
 
 * Android: replace [AsyncTask](https://developer.android.com/reference/android/os/AsyncTask) (was deprecated in API level 30) by [Executor](https://developer.android.com/reference/java/util/concurrent/Executor)
